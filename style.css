@@ -36,7 +36,6 @@ body {
 
 /* Conteneur des boutons */
 .buttons {
-  display: none; /* Cache les boutons au début */
   position: absolute;
   top: 75%;
   left: 50%;
