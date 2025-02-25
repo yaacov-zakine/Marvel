@@ -1,0 +1,144 @@
+/* Styles communs */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style par défaut pour le body (pour les pages non-accueil) */
+body {
+  background: linear-gradient(45deg, #0a0a0a, #2a0a0a);
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Bangers", cursive;
+  color: #fff;
+  position: relative;
+}
+
+/* Pour la page d'accueil uniquement (body avec classe "home") */
+body.home-page {
+  background: url("Arrière_plan/Background_fond.png") no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 3em;
+  text-shadow: 3px 3px #e62429;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 40px;
+  font-size: 1.5em;
+  background: #e62429;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #e62429;
+}
+
+/* Styles spécifiques à la page d'accueil */
+.marvel-logo {
+  width: 300px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+.subtitle {
+  font-size: 2em;
+  color: #e62429;
+  margin-bottom: 40px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1.2em;
+  color: #888;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+@keyframes colorPulse {
+  0%,
+  100% {
+    color: #fff;
+  }
+  50% {
+    color: #e62429;
+  }
+}
+
+/* Styles spécifiques à la page d'histoire */
+video {
+  width: 80%;
+  max-width: 800px;
+  border: 5px solid #e62429;
+  border-radius: 10px;
+}
+
+.next-button {
+  margin-top: 20px;
+}
+
+/* Styles spécifiques à la page des personnages */
+.characters {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 800px;
+}
+
+.character {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.character img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #e62429;
+}
+
+.character p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.character:hover {
+  transform: scale(1.1);
+}
+
+.start-button {
+  margin-top: 20px;
+}
