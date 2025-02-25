@@ -87,4 +87,3 @@
 <?php
 
 include 'script.js';
-include 'script2.php';
