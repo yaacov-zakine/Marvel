@@ -40,8 +40,9 @@ body {
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex; /* ✅ Ajoute cette ligne */
   flex-direction: row;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
   z-index: 1000;
 }
@@ -102,17 +103,20 @@ body {
 /* 📑 Organisation des lignes du formulaire */
 .form-row {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  width: 100%;
-  margin-top: 40px;
+  justify-content: space-between; /* Espacement équilibré */
+  gap: 30px;
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 800px; /* Ajuste selon le besoin */
+  margin: 0px auto; /* Centre le formulaire */
+  height: auto; /* Ajuste la hauteur en fonction du contenu */
 }
 
 /* 📌 Organisation des champs */
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 200px;
+  max-width: 1000px; /* Ajuste la largeur des champs */
 }
 
 /* 🎨 Style des labels */
@@ -122,37 +126,29 @@ body {
   margin-bottom: 7px;
 }
 
-/* ✍️ Champs de saisie */
-.form-group input {
-  width: 223px;
-  height: 40px;
-  border-radius: 10px;
-  border: none;
-  font-size: 16px;
-  background-color: white;
-}
-
+/* 🚀 Style des boutons */
 .btn {
   background-color: #f0141e;
   color: white;
   border: none;
   border-radius: 50px;
-  font-size: 18px;
+  font-size: 20px; /* Texte plus grand */
   cursor: pointer;
   transition: background 0.3s;
-  margin-top: 50px;
-  width: 200px;
-  height: 60px;
-  max-height: none;
+  margin-top: 20px;
+  width: 250px; /* Largeur du bouton agrandie */
+  height: 70px; /* Hauteur du bouton agrandie */
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 200px;
+  text-align: center;
+  line-height: normal; /* Correction de la hauteur du texte */
 }
 
+/* Effet au survol */
 .btn:hover {
   background-color: #b02a28;
 }

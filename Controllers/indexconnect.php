@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Style/style.css" />
   </head>
   <body>
     <img
       class="registrationpage"
-      src="IMAGESSITE/registrationpage.svg"
+      src="../Images/registrationpage.svg"
       alt="registrationpage"
     />
     <div class="form-connect">

@@ -29,16 +29,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($identifiant) && !empty($pseudo) && !empty($motdepasse) && !empty($email)) {
 
 
-        $motdepasse_hache = password_hash($motdepasse, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO utilisateurs (identifiant, pseudo, motdepasse, email)
-                VALUES (:identifiant, :pseudo, :motdepasse, :email)";
+        $motdepasse_hache = password_hash($motdepasse,PASSWORD_DEFAULT);
+        $sql = "INSERT INTO utilisateurs (username, pseudo, password, emailadress)
+                VALUES (:username, :pseudo, :password, :emailadress)";
         $stmt = $pdo->prepare($sql);
-        $stmt->bindParam(':identifiant', $identifiant);
+        $stmt->bindParam(':username', $identifiant);
         $stmt->bindParam(':pseudo', $pseudo);
-        $stmt->bindParam(':motdepasse', $motdepasse_hache);
-        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $motdepasse_hache);
+        $stmt->bindParam(':emailadress', $email);
+
         if ($stmt->execute()) {
-            echo "Inscription réussie !";
+            header("Location: ../Controllers/indexgame.php");
+exit();
+
         } else {
             echo "Erreur lors de l'inscription.";
         }
