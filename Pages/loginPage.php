@@ -27,7 +27,7 @@
        </div>
        
         <div class="form-group">
-             <label  class="form-group" for="username">Pseudo :</label>
+             <label for="username">Personnage Favori :</label>
              <input type="text" id="pseudo" name="pseudo" required><br><br>
         </div>
     </div>

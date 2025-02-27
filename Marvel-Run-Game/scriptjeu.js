@@ -19,7 +19,7 @@ document.body.appendChild(renderer.domElement);
 
 // Varaible of the game
 let score = 0;
-let difficulty = 1;
+let difficulty = 0.7;
 let startTime = Date.now();
 let gameOver = false;
 
@@ -41,16 +41,19 @@ document.body.appendChild(restartButton);
 const backToMenuButton = document.createElement("button");
 backToMenuButton.id = "backToMenuButton";
 backToMenuButton.innerText = "Retour au Menu";
+
+// Add a debug message to the console
 backToMenuButton.addEventListener("click", () => {
-  window.location.href = "http://localhost:8888/Marvel-Run/indexgame.php";
+  console.log("Redirection en cours...");
+  window.location.href = "../Controllers/indexgame.php";
 });
+
 document.body.appendChild(backToMenuButton);
 
 const loader = new THREE.TextureLoader();
 let player;
 let enemies = [];
 
-// Contrôles du joueur (déplacement gauche/droite)
 let moveLeft = false;
 let moveRight = false;
 
@@ -124,7 +127,7 @@ function createEnemy() {
 // Enemy moving function
 function updateEnemies() {
   for (let badguy = 0; badguy < enemies.length; badguy++) {
-    enemies[badguy].position.y -= 0.04 * difficulty;
+    enemies[badguy].position.y -= 0.07 * difficulty;
 
     if (checkCollision(enemies[badguy], player)) {
       showGameOver();
@@ -162,7 +165,7 @@ function updateScoreAndTime() {
   scoreElement.innerHTML = `Score: ${score} | Temps: ${elapsedTime}s`;
 
   if (score % 100 === 0) {
-    difficulty += 0.2;
+    difficulty += 0.4;
   }
 }
 

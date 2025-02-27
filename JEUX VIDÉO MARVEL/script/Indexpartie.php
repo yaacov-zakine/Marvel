@@ -19,7 +19,7 @@
       />
       <h1 class="title">MARVEL RUN</h1>
       <p class="subtitle">VS DOOMSDAY</p>
-      <!-- Lien vers la page d'histoire -->
+      
       <button
         class="start-button"
         onclick="window.location.href='histoire.php'"

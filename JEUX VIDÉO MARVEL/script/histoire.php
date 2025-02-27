@@ -17,7 +17,7 @@
         <source src="../Vidéo Teaser/Marvel Teaser_1.mp4" type="video/mp4" />
         Votre navigateur ne supporte pas la vidéo.
       </video>
-      <!-- Lien vers la page des personnages -->
+      
       <button
         class="next-button"
         onclick="window.location.href='personnages.php'"

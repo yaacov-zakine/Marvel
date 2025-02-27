@@ -14,33 +14,41 @@
     <div id="personnages-page" class="container">
       <h1 class="title">Choisissez votre Personnage</h1>
       <div class="characters">
-        <div class="character" onclick="selectCharacter('La torche humaine')">
-          <img
-            src="../Personnages PNG/L'homme feu Fantastic.png"
-            alt="La torche humaine"
-          />
-          <p>La torche humaine</p>
-        </div>
-        <div class="character" onclick="selectCharacter('Mr. Fantastic')">
-          <img src="../Personnages PNG/Mr Fantastic.png" alt="Mr. Fantastic" />
-          <p>Mr. Fantastic</p>
-        </div>
-        <div class="character" onclick="selectCharacter('La Chose')">
-          <img
-            src="../Personnages PNG/La choses Fantastic.png"
-            alt="La Chose"
-          />
-          <p>La Chose</p>
-        </div>
-        <div class="character" onclick="selectCharacter('Jane storm')">
-          <img src="../Personnages PNG/Mmr fantastic.png" alt="Jane storm" />
-          <p>Jane storm</p>
-        </div>
+        <!-- Pour chaque personnage, on enveloppe le contenu dans un lien -->
+        <a href="../Game torch/Gametorch.html">
+          <div class="character">
+            <img
+              src="../Personnages PNG/L'homme feu Fantastic.png"
+              alt="La torche humaine"
+            />
+            <p>La torche humaine</p>
+          </div>
+        </a>
+        <a href="../Game mr fantastique/Game mrfantastique.html">
+          <div class="character">
+            <img
+              src="../Personnages PNG/Mr Fantastic.png"
+              alt="Mr. Fantastic"
+            />
+            <p>Mr. Fantastic</p>
+          </div>
+        </a>
+        <a href="../Game la chose/Lachose.html">
+          <div class="character">
+            <img
+              src="../Personnages PNG/La choses Fantastic.png"
+              alt="La Chose"
+            />
+            <p>La Chose</p>
+          </div>
+        </a>
+        <a href="../Game invisiblewoman/Gameinvisiblewoman.html">
+          <div class="character">
+            <img src="../Personnages PNG/Mmr fantastic.png" alt="Jane storm" />
+            <p>Jane storm</p>
+          </div>
+        </a>
       </div>
-      <!-- Bouton pour démarrer la partie -->
-      <a href="/Marvel-Run-Game/index.php"><button class="start-button" onclick="startGame()">
-        Commencer la partie!
-      </button></a>
     </div>
     <script src="script3.php"></script>
   </body>

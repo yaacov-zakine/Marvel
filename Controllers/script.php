@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   image.addEventListener("animationend", function () {
     console.log("Animation terminée, affichage des boutons...");
-    buttons.style.display = "flex"; // Affichage des boutons après l'animation
+    buttons.style.display = "flex"; // Displaying buttons after animation
   });
 });
 </script>

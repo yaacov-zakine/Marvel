@@ -19,7 +19,7 @@ $config = [
     ]
 ];
 
-// Affichage du tableau pour vérification
+// Display the table for verification
 print_r($config);
 
 ?>
