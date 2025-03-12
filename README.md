@@ -26,9 +26,9 @@ Dans ce jeu, vous avez la possibilité de :
 
 - **Incarner un héros Marvel** : Choisissez parmi une sélection de personnages iconiques, chacun doté de pouvoirs uniques.
 - **Vivre une aventure interactive** : Suivez un scénario captivant mêlant action, stratégie et rebondissements.
-- **Affronter vos amis** : En mode multijoueur local, défiez vos camarades pour prouver qui est le héros ultime !
+- **Affronter vos amis** : En mode multijoueur local, défiez Domms Day pour prouver qui est le héros ultime !
 
-*Pourquoi ce jeu ?*  
+_Pourquoi ce jeu ?_  
 Nous souhaitons offrir une expérience ludique et immersive qui combine le plaisir du jeu vidéo et la passion pour l'univers Marvel, tout en encourageant la créativité et la collaboration au sein de notre promotion.
 
 ---
@@ -51,10 +51,11 @@ Nous souhaitons offrir une expérience ludique et immersive qui combine le plais
 - **Configuration Minimale** :
   - 8 Go de RAM
   - Carte graphique compatible DirectX 11 ou équivalent
-- **Environnement de développement** : [Nom de l'IDE ou moteur de jeu utilisé, par exemple Unity, Unreal Engine, Godot, etc.]
+- **Environnement de développement** : Visual studio code
 
 ### Instructions
 
 1. **Cloner le dépôt** :
    ```bash
    git clone https://github.com/votre-compte/marvel-ultimate-showdown.git
+   ```

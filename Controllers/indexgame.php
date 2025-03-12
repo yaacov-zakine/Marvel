@@ -19,7 +19,7 @@
       alt="imagegamecomics"
     />
     <div class="allbtngame">
-      <a href="../JEUX VIDÉO MARVEL/script/Indexpartie.php">
+      <a href="../JEUX_VIDEO_MARVEL/script/Indexpartie.php">
         <div class="btngame">JOUER</div>
       </a>
       <div class="btngame" onclick="togglePopup()">TUTORIEL</div>
@@ -39,7 +39,7 @@
         <p>Sélectionnez votre héros préféré parmi les personnages disponibles.</p>
         
         <h2>🎮 2. Lancez la partie</h2>
-        <p>Cliquez sur <span class="highlight">"Commencer"</span> pour entrer dans l'action.</p>
+        <p>Cliquez sur <span class="highlight">"votre personnage favori"</span> pour entrer dans l'action.</p>
         
         <h2>⌨️ 3. Contrôlez votre personnage</h2>
         <p>Utilisez les <span class="highlight">flèches gauche et droite</span> de votre clavier pour déplacer votre personnage.</p>

@@ -26,10 +26,19 @@
             <input type="text" id="identifiant" name="identifiant" required><br><br>
        </div>
        
-        <div class="form-group">
-             <label for="username">Personnage Favori :</label>
-             <input type="text" id="pseudo" name="pseudo" required><br><br>
-        </div>
+       <div class="form-group">
+    <label for="username">Personnage Favori :</label>
+    <select id="pseudo" name="pseudo" required>
+        <option value="">Sélectionnez un personnage</option>
+        <option value="La Torche">La Torche</option>
+        <option value="La chose">La chose</option>
+        <option value="Mr fantastique">Mr fantastique</option>
+        <option value="Invisible Women">Invisible Women</option>
+        <option value="Dooms Day">Fatalis</option>
+        <!-- Ajoutez d'autres options selon vos besoins -->
+    </select>
+    <br><br>
+</div>
     </div>
 
 

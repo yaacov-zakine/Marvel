@@ -22,19 +22,20 @@ session_start(); // Start the session from the beginning
         }
         ?>
         
-        <form action="../Controllers/connectController.php" method="POST">
-            <div class="champ-row">
-                <div class="champ">
-                    <label for="email">Adresse mail :</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="champ">
-                    <label for="motdepasse">Mot de passe :</label>
-                    <input type="password" id="motdepasse" name="motdepasse" required>
-                </div>
-                <button class="bouton" type="submit">SE CONNECTER</button>
-            </div>
-        </form>
+        <form action="../Controllers/connectController.php" method="POST" class="connexion-form">
+    <div class="champ-row">
+        <div class="champ">
+            <label for="email">Adresse mail :</label>
+            <input type="email" id="email" name="email" class="input-connexion" required>
+        </div>
+        <div class="champ">
+            <label for="motdepasse">Mot de passe :</label>
+            <input type="password" id="motdepasse" name="motdepasse" class="input-connexion" required>
+        </div>
+        <button class="bouton" type="submit">SE CONNECTER</button>
+    </div>
+</form>
+
     </div>
 
 </body>
